@@ -1,0 +1,20 @@
+HELP INITIATING FOLDER
+http://stackoverflow.com/questions/17291995/push-existing-project-into-github
+
+HELP UPDATING FOLDER
+https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/
+
+Note: these must be run while in the folder in your bash session through terminal
+
+COMMIT NEW FOLDER:
+
+> git init
+> git add .
+> git commit -m "Initial commit"
+> git remote add origin <project url>
+> git push -f origin master
+
+UPDATE FOLDER ALREADY ON GIT: 
+> git add .
+> git commit -m "Initial commit"
+> git push -f origin master
