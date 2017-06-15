@@ -321,3 +321,24 @@ sarima(dl_varve, 0, 0, 1)
 # Fit an ARMA(1,1) to dl_varve. Examine the residuals
 	# everything looks good, Ljung-Box is happy
 sarima(dl_varve, 1, 0, 1)
+
+
+
+
+# Arma Get In
+
+# the dataframe oil
+	# WTI spot price FOB (in dollars per barel)
+	# weekly price from 2000 to 2008
+
+# Calculate approximate oil returns
+oil_returns <- diff(log(oil))
+
+# Plot oil_returns. Notice the outliers.
+plot(oil_returns)
+
+# Plot the P/ACF pair for oil_returns
+acf2(oil_returns)
+
+# Assuming both P/ACF are tailing, fit a model to oil_returns
+sarima(oil_returns, 1, 0, 1)
