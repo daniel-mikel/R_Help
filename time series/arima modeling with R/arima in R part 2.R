@@ -1,4 +1,4 @@
-# This is part 1 of a multi part course in datacamp
+# This is part 2 of a multi part course in datacamp
 # https://campus.datacamp.com/courses/arima-modeling-with-r/fitting-arma-models?ex=1
 
 # companion package astsa which holds data
