@@ -1,0 +1,21 @@
+
+# from https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
+
+# for further reading
+	# http://r-pkgs.had.co.nz/description.html
+		# from Hadley
+
+# more holistic, may have to do this to understand everything
+	# https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio
+
+ # step 0: Packages you need:
+ 	# devtools
+ 	# roxygen2
+
+install.packages("devtools")
+library("devtools")
+devtools::install_github("klutometis/roxygen")
+library("roxygen2")
+
+# step 1
+setwd("parent_directory")
