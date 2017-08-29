@@ -1,10 +1,7 @@
 # Run R from Sublime
 
-############################################
-# Open the Sublime console (not R console) #
-############################################
-# "ctrl + ~"
-
+# Open the Sublime console (not R console) 
+	# "ctrl + ~"
 
 ###########################
 # Starting a New R Script #
@@ -12,18 +9,17 @@
 
 # if this is your first time running sublime from R
 	# you'll need to first install the packages in the next section
+	# then come back here
 
 # when you open a new script you'll need to set the the following packages:
 	# Set Syntax: R
 	# REPL: R
 
-#####################################
-# Open Sencond Window for R Console #
-#####################################
+# Open Sencond Window for R Console 
 
 # open second window:
-	# press "ctrl + shift + 2"
-	# can change view by setting second window to a row or a column
+	# press "alt + shift + 2" or "alt + shift + 8"
+		# gives you 2 windows split either vertically or horizontally
 # close second window:
 	# press "ctrl + shift + 1"
 
@@ -31,6 +27,8 @@
 # Set Up R in Sublime #
 #######################
 
+# note that you'll need to install the Package Control Manager
+	# https://packagecontrol.io/installation
 
 # based on tutorial from
 	#http://www.kevjohnson.org/using-r-in-sublime-text-3/
@@ -50,17 +48,19 @@
 		# View packages Ctrl + Shift + P "Package Control: Check Package"
 	# SublimeREPL
 	# R-Box
-	# SendTextPlus (SendText available, SendTextPlus is now SendCode)
+	# SendCode (SendText available, SendCode was SendTextPlus)
 	# R-Snippets
 # suggested preferences
 	# R-Snippets
 	# R Extended
-	# SendTextPlus: Choose Program
+	# SendCode: Choose Program
 		# then select R (for me REPL R)
 	# REPL:R
 		# may be required for each new script opened
 
 # i had trouble with one of the dependencies "tmux", I forgot which package it was
+	# problem in Ubuntu 16.04 LTS and 17.04
+		# this is usally why my R code won't send to REPL
 	# found solution here:
 		# https://github.com/nZEDb/nZEDb/issues/2182
 
@@ -72,4 +72,5 @@
 # allow word wrapping on your documents
 	# http://justinseeley.com/tutorials/quick-tip-enable-sublime-text-word-wrap
 
--
+# parenthesis highlighting
+	# BracketHighlighter
