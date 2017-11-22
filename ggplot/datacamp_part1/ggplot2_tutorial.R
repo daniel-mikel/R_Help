@@ -1,6 +1,9 @@
 #ggplot2
  #tutorial from Data Camp
 
+
+# Part 1
+
 #https://campus.datacamp.com/courses/data-visualization-with-ggplot2-1/chapter-1-introduction-30dbf683-e5ab-4c76-9bbd-3b3afbf15383?ex=1
 
 # Load the ggplot2 package
@@ -440,4 +443,20 @@ ggplot(mtcars, aes(x = mpg, y = group)) +
 # form must follow function
   # and that depends on who your audience is
   # you should not be misrepresenting your data!
+
+
+
+
+# Overplortting 1 - Point Shape and Transparency
+# Basic scatter plot: wt on x-axis and mpg on y-axis; map cyl to col
+ggplot(mtcars, aes(x = wt, y = mpg, color = cyl)) + 
+  geom_point(size = 4)
+
+
+# Hollow circles - an improvement
+
+
+
+# Add transparency - very nice
+
 
